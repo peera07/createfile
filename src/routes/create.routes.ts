@@ -1,5 +1,5 @@
 import { Request, Response, Router, NextFunction } from "express";
-import { promises as fs } from "fs";
+const fs = require('fs');
 class fileRoutes {
   createFile() {
     return async (req: Request, res: Response, next: NextFunction) => {
