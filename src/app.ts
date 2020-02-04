@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import { Routes } from "./routes";
 
 const app = express();
-const port = 8070;
+const port = 30010;
 const routes = new Routes(app);
 
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
