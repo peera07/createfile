@@ -1,0 +1,55 @@
+Arguments: 
+  /Users/zack/.nvm/versions/node/v12.13.1/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js i
+
+PATH: 
+  /Users/zack/.nvm/versions/node/v12.13.1/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.13.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/zack/Documents/svnh/createfile/package.json: Unexpected token } in JSON at position 576
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "checkup_api",
+    "version": "1.0.0",
+    "main": "app.ts",
+    "author": "PK",
+    "license": "LBS",
+    "private": true,
+    "scripts": {
+      "build": "rm -rf dist | node_modules/.bin/tsc",
+      "serve": "nodemon --exec ts-node src/app.ts"
+    },
+    "devDependencies": {
+      "@types/body-parser": "^1.17.1",
+      "@types/express": "^4.17.2",
+      "@types/node": "^13.5.1",
+      "ts-lint": "^4.5.1",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "tslint-config-prettier": "^1.18.0",
+      "typescript": "^3.7.5"
+    },
+    "dependencies": {
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
