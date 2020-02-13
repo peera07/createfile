@@ -7,7 +7,7 @@ class fileRoutes {
       const { text, ext, path } = req.body;
       //let body = iconv.decode(new Buffer(text), "TIS-620");
       //console.log(body)
-      await fs.writeFile(`${path}/${ext}`, `${text}`, {encodeing: 'tis620'});
+      await fs.writeFile(`${path}/${ext}`, `${text}`, {encodeing: 'iso-8859-1'});
       return res.status(200).send({message: 'Success'})
     };
   }
